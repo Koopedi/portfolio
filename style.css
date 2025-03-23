@@ -185,3 +185,115 @@ a {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 5%;
+  }
+
+  .navbar .logo {
+    font-size: 24px;
+  }
+
+  .navbar ul li {
+    margin-left: 20px;
+  }
+
+  .navbar ul li a {
+    font-size: 18px;
+  }
+
+  .main, .about {
+    padding: 60px 5% 0;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .main-info h1, .about-info h1 {
+    font-size: 40px;
+  }
+
+  .main-info h2, .about-info h2 {
+    font-size: 24px;
+  }
+
+  .main-info p, .about-info p {
+    font-size: 14px;
+    margin: 10px 0 20px;
+  }
+
+  .main-img .img-box {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .main-info .btn-sci .sci a {
+    font-size: 18px;
+    padding: 6px;
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .navbar .logo {
+    font-size: 22px;
+  }
+
+  .navbar ul li {
+    margin-left: 15px;
+  }
+
+  .navbar ul li a {
+    font-size: 16px;
+  }
+
+  .main, .about {
+    padding: 60px 3% 0;
+  }
+
+  .main-info h1, .about-info h1 {
+    font-size: 35px;
+  }
+
+  .main-info h2, .about-info h2 {
+    font-size: 22px;
+  }
+
+  .main-info p, .about-info p {
+    font-size: 13px;
+    margin: 10px 0 15px;
+  }
+
+  .main-img .img-box {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 6px 15px;
+  }
+
+  .main-info .btn-sci .sci a {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
