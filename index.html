@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tshepo Koopedi | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <script>
+      
+      window.addEventListener("scroll", function() {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".navbar ul li");
+
+        let currentSection = "";
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 100; 
+          if (scrollY >= sectionTop) {
+            currentSection = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove("active");
+          const linkHref = link.querySelector("a").getAttribute("href").substring(1); 
+          if (linkHref === currentSection) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo">Portfolio.</a>
+      <ul>
+        <li class="active"><a href="#home">Home</a></li> 
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Work experience</a></li>
+      </ul>
+    </nav>
+
+ 
+    <section id="home" class="main darker-color">
+      <div class="main-info">
+        <h1>Ephraim Tshepo Koopedi</h1>
+        <h2>I'm a Full Stack Developer</h2>
+        <p>Welcome to my online portfolio! I’m Ephraim Tshepo Koopedi, an intermediate Full-Stack Developer based in Pretoria, South Africa. I specialize in building robust and scalable data-driven web applications. With experience across multiple technologies, I have developed a strong skill set in both front-end and back-end development. My work is driven by a passion for solving complex problems and delivering high-quality software solutions. Feel free to explore my work and contact me for any inquiries or collaborations.</p>
+        <div class="btn-sci">
+          <a href="Tshepo Koopedi CV.pdf" class="btn" target="_blank" download="Tshepo Koopedi CV.pdf">Download CV</a>
+          <div class="sci">
+            <a href="https://github.com/Koopedi?tab=repositories" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/ephraim-tshepo-koopedi-67969293/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+            <!-- <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-facebook' ></i></a> -->
+          </div>
+        </div>
+      </div>
+      <div class="main-img">
+        <div class="img-box">
+          <div class="img-item">
+            <img src="profile.png" alt="Profile picture of Ephraim Tshepo Koopedi">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="about" class="main">
+      <div class="main-info">
+        <h1>Ephraim Tshepo Koopedi</h1>
+        <h2>I'm a Full Stack Developer</h2>
+        <p>Hello! I am an Intermediate Full-Stack Developer with a focus on Java, Spring Boot, Angular, and various other technologies. Over the years, I’ve had the opportunity to contribute to a range of exciting projects, from financial applications to online casino platforms. I have worked in collaborative environments, participating in agile teams, and building data-driven applications to meet the needs of businesses across various sectors.</p>
+        <p>In my professional journey, I have developed a strong foundation in both the back-end and front-end technologies. I take pride in delivering clean, efficient, and maintainable code while ensuring high standards of software quality. Beyond just writing code, I focus on the bigger picture of system design, integration, and performance optimization.</p>
+        <p>I continuously strive to enhance my skills through new challenges and by staying up-to-date with the latest industry trends. I am always eager to work on projects that not only push my technical abilities but also allow me to contribute to the success of teams and organizations.</p>
+      </div>
+    </section>
+
+    <section id="portfolio" class="main darker-color">
+      <div class="main-info">
+
+        <div class="grid-container">
+       
+          <div class="project">
+            <h3>FNB Wealth & Investment Division (PBT Group)</h3>
+            <p><strong>Position:</strong> Intermediate Software Engineer</p>
+            <p><strong>Duration:</strong> 01 October 2024 – PRESENT</p>
+            <p>As part of the development team at FNB, I worked on building data-driven applications to support the expansion of the Wealth & Investment division. I was involved in refactoring code, writing and debugging tests, improving security, and contributing to the development of robust, scalable systems.</p>
+            <p><strong>Technologies Used:</strong> Java, Spring Boot, Thymeleaf, AWS, MySQL, Bamboo, Docker, Bitbucket</p>
+          </div>
+
+ 
+          <div class="project">
+            <h3>Aristocrat Online Casino Expansion (Wonderlabz)</h3>
+            <p><strong>Position:</strong> Intermediate Full Stack Developer</p>
+            <p><strong>Duration:</strong> 3 April 2023 – 30 September 2024</p>
+            <p>I worked on designing, developing, and deploying applications for Aristocrat's expansion into international markets. My work involved improving game resource bundling, refactoring code, writing tests, and ensuring that the game system is secure and scalable.</p>
+            <p><strong>Technologies Used:</strong> Java, Spring Boot, Camel, Angular, Google Cloud Platform, MongoDB, Keycloak, Gitlab Pipelines</p>
+          </div>
+
+        
+          <div class="project">
+            <h3>Hyphen Technologies (Webtonic Online Solutions)</h3>
+            <p><strong>Position:</strong> Junior Full Stack Developer</p>
+            <p><strong>Duration:</strong> 20 March 2022 – 06 March 2023</p>
+            <p>My role involved developing a debtors and creditors system for Hyphen Technologies. I focused on writing efficient code and testing, ensuring that the application was scalable, secure, and user-friendly.</p>
+            <p><strong>Technologies Used:</strong> Java, Angular, DB2, MongoDB, Keycloak, Bamboo</p>
+          </div>
+
+      
+          <div class="project">
+            <h3>RaizCorp Software Development (Webtonic Online Solutions)</h3>
+            <p><strong>Position:</strong> Junior Full Stack Developer</p>
+            <p><strong>Duration:</strong> 08 November 2021 – 14 March 2022</p>
+            <p>I was responsible for developing a subscription-based platform offering enterprise development and supplier programs. The work required me to integrate various systems and ensure that the user interface was intuitive and responsive.</p>
+            <p><strong>Technologies Used:</strong> Java, Angular, MySQL, MongoDB, JHipster, Rest API</p>
+          </div>
+
+          
+          <div class="project">
+            <h3>Liberty Health Software Implementation (Reverside Software Solutions)</h3>
+            <p><strong>Position:</strong> Junior Frontend Developer</p>
+            <p><strong>Duration:</strong> 15 June 2018 – 31 October 2021</p>
+            <p>I contributed to the development of custom software solutions for Liberty Health, focusing on Oracle-based systems and ensuring proper integration with multiple back-end services.</p>
+            <p><strong>Technologies Used:</strong> Knockout JS, JavaScript, TypeScript, MySQL, Oracle</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
